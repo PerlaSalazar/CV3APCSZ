@@ -40,9 +40,7 @@ class _EjemploFutere extends State<EjemploFutere> {
 
   void textChange() {
     setState(() {
-      //numero
       obtenerNumero();
-
       colorNum = generarColorAleatorio();
     });
   }
@@ -71,7 +69,7 @@ class _EjemploFutere extends State<EjemploFutere> {
                     ),
                   );
                 } else {
-                  return const Text('No hay datos');
+                  return const Text('No hay datos para mostrar');
                 }
             }
           },
