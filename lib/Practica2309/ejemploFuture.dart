@@ -8,6 +8,7 @@ class EjemploFutere extends StatefulWidget {
   State<EjemploFutere> createState() => _EjemploFutere();
 }
 
+//generar color
 Color generarColorAleatorio() {
   Random random = Random();
   return Color.fromRGBO(
@@ -19,7 +20,7 @@ Color generarColorAleatorio() {
 }
 
 class _EjemploFutere extends State<EjemploFutere> {
-  Color colorNum = Colors.black; // Color inicial
+  Color colorNum = Colors.black; // Color de texto inicial
 
   //late para indicar que posteriormente va a llegar un valor
   //para indicar que es una nueva solicitud
@@ -39,7 +40,9 @@ class _EjemploFutere extends State<EjemploFutere> {
 
   void textChange() {
     setState(() {
+      //numero
       obtenerNumero();
+
       colorNum = generarColorAleatorio();
     });
   }
